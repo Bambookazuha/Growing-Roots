@@ -47,7 +47,7 @@
 
 @media (max-width: 768px) {
 .btn.p-button {
-    width: 500px;
+    width: 250px;
     }
 }
 .btn.c-button {
@@ -65,4 +65,5 @@
     color: white;
     background-color:  #91b257;
     transform: scale(1.05);
-}    
+}
+  

@@ -38,7 +38,7 @@
     min-height: 250px;
 }
 .btn.f-button {
-    width: 650px;
+    width: 250px;
     margin-top: 1.5rem;
     background-color: #f5fffa;
     color:#2e3c21;
@@ -60,7 +60,7 @@
 }
 @media (max-width: 768px) {
     .btn.f-button {
-        width: 500px;
+        width: 200px;
     }
 }
 

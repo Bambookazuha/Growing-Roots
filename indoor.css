@@ -307,12 +307,7 @@ section{
   }
 }
  
-.bi{
-  color: #91b257;
-  transition: transform
-  0.3s
-  ease-in-out;
-}
+
  
 .scroll-up {
   position: fixed;

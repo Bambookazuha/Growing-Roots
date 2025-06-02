@@ -71,6 +71,56 @@
         }
         .offcanvas{
         background-color: #91b257;
+        }
+        .ep {
+            font-size: 18px;
+        }
+        .submit-button {
+            width: 100%;
+            margin-top: 1.5rem;
+            background-color: #f5fffa;
+            color:#2e3c21;
+            border: 3px solid #2e3c21;
+            padding: 8px 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        .submit-button:hover {
+            color: white;
+            background-color:  #91b257;
+        }
+
+        .close-button {
+            width: 65px;
+            background-color: #f5fffa;
+            color:#2e3c21;
+            border: 3px solid #2e3c21;
+            padding: 8px 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+        .close-button:hover {
+            color: white;
+            background-color:  #91b257;
+        }
+        @media (min-width:300px) and (max-width:400px) {
+            .steps {
+                width: 350px;
+            }
+            .ep {
+                font-size: 15px;
+            }
+        }
+        @media (min-width:400px) and (max-width:567px) {
+        .steps {
+            width: 400px;
+            height: 350px;
+        }
+        .pc {
+            font-size: 18px;
+        }
       }
     </style>
 </head>
@@ -114,7 +164,7 @@
     </div>
     </nav>
 
-   <!-- modal for register -->
+    <!-- modal for register -->
     <div class="modal" id="register_modal" data-bs-backdrop="static">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
             <div class="modal-content">
@@ -195,7 +245,7 @@
                         <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Password">
                     </form>
                     <div>
-                        <button type="submit" class="button btn submit-button mt-3" style="width: 470px;">Submit</button>
+                        <button type="submit" class="button btn submit-button mt-3">Submit</button>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -210,7 +260,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-8 mt-3" style="margin-right: 95.8px;">
                 <h1 class="text">Grow to Nourish, Grow to Sustain</h1>
-                <p style="font-size: 18px;">
+                <p class="ep">
                 In this page, you will explore how edible plants can support both your health and a more sustainable
                 lifestyle. You’ll learn about different types of edible plants such as fruits, vegetables, herbs, and
                 plant-based protein sources. For each one, we provide detailed information about the plant, including
@@ -238,7 +288,7 @@
         <div class="tab-content">
             <div class="tab-pane active" id="fruits">
                 <div class="row mt-4 justify-content-center">
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -287,7 +337,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-3 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-9">
                                 <h2>Orange</h2><hr>
@@ -336,7 +386,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -384,7 +434,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-3 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-9">
                                 <h2>Blueberry</h2><hr>
@@ -436,7 +486,7 @@
                 </div>
                 
                 <div class="row">
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -488,7 +538,7 @@
                 </div>
 
                 <div class="row mt-2 justify-content-center">
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -537,7 +587,7 @@
                         </div>
                     </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                             <div class="row mb-3">
                                 <div class="col-lg-3 mt-4 cricle">
                                     <div class="d-flex justify-content-center align-items-center mb-3">
@@ -586,7 +636,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                             <div class="row mb-3">
                                 <div class="col-lg-3 mt-4 cricle">
                                     <div class="d-flex justify-content-center align-items-center mb-3">
@@ -635,7 +685,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                             <div class="row mb-3">
                                 <div class="col-lg-3 mt-4 cricle">
                                     <div class="d-flex justify-content-center align-items-center mb-3">
@@ -687,7 +737,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-9">
                             <h2>Avocado</h2><hr>
@@ -738,7 +788,7 @@
             </div>
             <div class="tab-pane" id="vege">
                 <div class="row mt-4 justify-content-center">
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -786,7 +836,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -834,7 +884,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -882,7 +932,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -933,7 +983,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -984,7 +1034,7 @@
                 </div>
 
                 <div class="row mt-4 justify-content-center">
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1032,7 +1082,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1080,7 +1130,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1128,7 +1178,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1178,7 +1228,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1231,7 +1281,7 @@
             </div>
             <div class="tab-pane" id="herbs">
                 <div class="row mt-4 justify-content-center">
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1279,7 +1329,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1327,7 +1377,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1375,7 +1425,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1477,7 +1527,7 @@
                 </div>
 
                 <div class="row mt-4 justify-content-center">
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1525,7 +1575,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1573,7 +1623,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1621,7 +1671,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1672,7 +1722,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1725,7 +1775,7 @@
             </div>
             <div class="tab-pane" id="protein">
                 <div class="row mt-4 justify-content-center">
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1773,7 +1823,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1821,7 +1871,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1869,7 +1919,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1920,7 +1970,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -1971,7 +2021,7 @@
                 </div>
 
                 <div class="row mt-4 justify-content-center">
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -2019,7 +2069,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -2067,7 +2117,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -2115,7 +2165,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">
@@ -2166,7 +2216,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="card card-body col-md-4 mb-3 ms-2 mt-2 text-start">
+                    <div class="card card-body col-md-4 mb-3 mx-2 mt-2 text-start">
                         <div class="row mb-3">
                             <div class="col-lg-3 mt-4 cricle">
                                 <div class="d-flex justify-content-center align-items-center mb-3">

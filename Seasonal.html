@@ -129,7 +129,63 @@
       .card-img-top {
         background-size: cover;
       }
+      .steps {
+        width: 500px;
+      }
+      .pc {
+        font-size: 18px;
+      }
+      .submit-button {
+        width: 100%;
+        margin-top: 1.5rem;
+        background-color: #f5fffa;
+        color:#2e3c21;
+        border: 3px solid #2e3c21;
+        padding: 8px 8px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-radius: 15px;
+     }
+    .submit-button:hover {
+        color: white;
+        background-color:  #91b257;
+     }
 
+    .close-button {
+        width: 65px;
+        background-color: #f5fffa;
+        color:#2e3c21;
+        border: 3px solid #2e3c21;
+        padding: 8px 8px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-radius: 15px;
+     }
+    .close-button:hover {
+        color: white;
+        background-color:  #91b257;
+     }
+      @media (min-width:300px) and (max-width:400px) {
+        .steps {
+            width: 350px;
+            height: 300px;
+        }
+        .text {
+            font-size: 30px;
+        }
+        .pc {
+            font-size: 16px;
+        }
+      }
+      @media (min-width:400px) and (max-width:567px) {
+        .steps {
+            width: 400px;
+            height: 300px;
+        }
+        .pc {
+            font-size: 18px;
+        }
+      }
     </style>
 </head>
 <body>
@@ -174,7 +230,7 @@
     </div>
     </nav>
 
-    <!-- modal for register -->
+     <!-- modal for register -->
     <div class="modal" id="register_modal" data-bs-backdrop="static">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
             <div class="modal-content">
@@ -255,7 +311,7 @@
                         <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Password">
                     </form>
                     <div>
-                        <button type="submit" class="button btn submit-button mt-3" style="width: 470px;">Submit</button>
+                        <button type="submit" class="button btn submit-button mt-3">Submit</button>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -269,11 +325,11 @@
     <div class="container mt-3 mb-3">
             <div class="row align-items-center">
                 <div class="col-lg-5 col-md-4">
-                    <img src="image/guides.png" class="steps" alt="sintro" width="500px">
+                    <img src="image/guides.png" class="steps" alt="sintro">
                 </div>
                 <div class="col-lg-6 col-md-8 mt-3" style="margin-right: 95.8px;">
                     <h1 class="text">Know the Plant, Master the Steps</h1>
-                    <p style="font-size: 18px;">
+                    <p class="pc">
                     In this section, you’ll find both detailed plant information and step-by-step guides to help you grow seasonal plants
                     with confidence. For each plant, we provide facts like the best season to grow, sunlight and water needs, ideal soil
                     types, and how long it takes to grow. Alongside that, our guides walk you through each stage of planting — from preparing
