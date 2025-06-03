@@ -414,13 +414,23 @@ a .btn-custom:hover {
     padding: 50px;
     text-align: center;
     max-width: 250px;
-    margin-bottom: 10px;
   }
   .lapgcon {
     margin-top: 200%;
   }
   .mhbcon {
     margin-top: 200%;
+  }
+  .tiogrow {
+    margin-top: 30%;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 399px) {
+  .lapgcon {
+    margin-top: 330%;
+  }
+  .mhbcon {
+    margin-top: 320%;
   }
   .tiogrow {
     margin-top: 30%;
@@ -501,3 +511,4 @@ a .btn-custom:hover {
   font-size: 25px;
   color: white;
 }
+

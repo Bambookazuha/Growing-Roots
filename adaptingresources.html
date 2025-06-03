@@ -86,23 +86,20 @@
                     <h2 class="modal-title">Registeration form</h2>
                 </div>
                 <div class="modal-body">
-                    <form action="">
+                    <form action=""> 
                     <!-- Sign up with -->
                         <div class="btn-group" role="group">
-                          <a href="https://www.google.com/" class="btn btn-color">
-                            <i class="bi bi-google"></i> Sign up with Google
-                          </a>
-                        </div>
-                        <div class="btn-group" role="group">
-                          <a href="https://www.facebook.com/" class="btn btn-color">
-                            <i class="bi bi-facebook"></i> Sign up with Facebook
-                          </a>
-                        </div>
-                        <div class="btn-group" role="group">
-                          <a href="https://appleid.apple.com/" class="btn btn-color">
-                            <i class="bi bi-apple"></i> Sign up with Apple
-                          </a>
-                        </div>
+                            <input class="btn-check" type="checkbox" name="checkbtn1" id="check1"/>
+                            <label for="check1" class="btn btn-outline-dark"><i class="bi bi-google"></i> Sign up with Google</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn2" id="check2"/>
+                            <label for="check2" class="btn btn-outline-dark"><i class="bi bi-facebook"></i> Sign up with Facebook</label>
+                          </div>
+                          <div class="btn-group" role="group">
+                            <input class="btn-check" type="checkbox" name="checkbtn3" id="check3"/>
+                            <label for="check3" class="btn btn-outline-dark"><i class="bi bi-apple"></i> Sign up with Apple</label>
+                          </div>
 
                           <!-- line between -->
                           <div class="d-flex align-items-center my-1">
@@ -110,7 +107,7 @@
                             <div class="mx-2 text-dark">or</div>
                             <div class="border border-dark" style="width: 50%;"></div>
                         </div>
- 
+
                           <!-- Inputs -->
                         <div class="row mt-2">
                         <div class="col-md-6">
@@ -137,7 +134,7 @@
                         </div>
                     </div>
                     </form>
-                   
+                    
                 </div>
                 <div class="modal-footer">
                     <a href="#login_modal" data-bs-toggle="modal">Go to Log in</a>
@@ -158,9 +155,6 @@
                         <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Username">
                         <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Password">
                     </form>
-                    <div>
-                        <button type="submit" class="button btn submit-button mt-3">Submit</button>
-                    </div>
                 </div>
                 <div class="modal-footer">
                     <a href="#register_modal" data-bs-toggle="modal" style="font-size: 18px;">Go to Register</a>
@@ -174,7 +168,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 text-center text-lg-start">
-            <h2 data-aos="fade-right">Adapting Resources</h2>
+            <h2 data-aos="fade-right" class="artitle">Adapting Resources</h2>
             <p data-aos="fade-right" data-aos-delay="200" style="font-size: 20px;">
               Discover the profound impact of gardening on environmental health
               and sustainability. Gardening not only enhances the beauty of your
@@ -191,54 +185,74 @@
       </div>
      </div>
      <!-- Adaptation Resources Section -->
-    <section id="explore" class="adaptation-section" style="padding: 160px;">
+     <section id="explore" class="adaptation-section">
+      <br><br><br><br><br><br>
       <div class="container text-center">
-          <h2 class="section-title mb-4">Explore Plant-Based Adaptations</h2>
-          <p class="section-description mb-5">Discover innovative ways to utilize plants for sustainable living. From natural cleaning products to plant-based dyes, explore the possibilities below.</p>
-          
-          <div class="row gy-5 justify-content-center">
-              <!-- Natural Cleaning Products -->
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="adaptation-box" id="cp" id="cp" data-aos="zoom-in" data-aos-delay="100">
-                      <h3>Natural Cleaning Products</h3>
-                      <p>Learn how to make easy, effective, eco-friendly cleaning products using plant-based ingredients like aloe vera, lemon, and cucumber.</p>
-                      <a href="#tocp">
-                        <button class="btn btn-custom mb-3 mt-3">
-                          Explore more
-                        </button>
-                      </a>
-                  </div>
-              </div>
-
-              <!-- Edible Plants -->
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="adaptation-box" id="ep" data-aos="zoom-in" data-aos-delay="200">
-                      <h3>Edible Plants</h3>
-                      <p>Discover edible plants you can grow at home, such as basil, mint, and rosemary. Enjoy fresh, organic produce straight from your garden.</p>
-                      <a href="#toep">
-                        <button class="btn btn-custom mb-3 mt-3">
-                          Explore more
-                        </button>
-                      </a>
-                  </div>
-
-              </div>
-
-              <!-- Plant-Based Dyes -->
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="adaptation-box" id="pbd" data-aos="zoom-in" data-aos-delay="300">
-                      <h3>Plant-Based Dyes</h3>
-                      <p>Create beautiful, easy and natural dyes using plants like beetroot, turmeric, and indigo. Perfect for eco-friendly fabric coloring.</p>
-                      <a href="#topbd">
-                        <button class="btn btn-custom mb-3 mt-3">
-                          Explore more
-                        </button>
-                      </a>
-                  </div>
-              </div>
-
+        <h2 class="section-title mb-4">Explore Plant-Based Adaptations</h2>
+        <p class="section-description mb-5">
+          Discover innovative ways to utilize plants for sustainable living. From
+          natural cleaning products to plant-based dyes, explore the possibilities
+          below.
+        </p>
+    
+        <div class="row gy-5 gx-4 justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="adaptation-box"
+              id="cp"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <h3>Natural Cleaning Products</h3>
+              <p>
+                Learn how to make easy, effective, eco-friendly cleaning products
+                using plant-based ingredients like aloe vera, lemon, and cucumber.
+              </p>
+              <a href="#tocp">
+                <button class="btn btn-custom mb-3 mt-3">Explore more</button>
+              </a>
+            </div>
           </div>
+    
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="adaptation-box"
+              id="ep"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <h3>Edible Plants</h3>
+              <p>
+                Discover edible plants you can grow at home, such as basil, mint,
+                and rosemary. Enjoy fresh, organic produce straight from your
+                garden.
+              </p>
+              <a href="#toep">
+                <button class="btn btn-custom mb-3 mt-3">Explore more</button>
+              </a>
+            </div>
+          </div>
+    
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="adaptation-box"
+              id="pbd"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <h3>Plant-Based Dyes</h3>
+              <p>
+                Create beautiful, easy and natural dyes using plants like beetroot,
+                turmeric, and indigo. Perfect for eco-friendly fabric coloring.
+              </p>
+              <a href="#topbd">
+                <button class="btn btn-custom mb-3 mt-3">Explore more</button>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+      <br><br><br><br><br><br>
     </section>
 
 
@@ -321,61 +335,61 @@
                   <h3 class="video-title mt-3"> Natural Bathroom Cleaner</h3>
               </div>
           </div>
-          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <br><br><br><br><br><br><br><br>
       </div>
   </div>
 </div>
   
 
     <!-- EP section -->
-     <div class="epimg " id="toep" data-aos="fade">
+     <div class="epimg mt-0" id="toep" data-aos="fade" >
       <img src="image/ep.png" alt="edible" width="100%" >
      </div>
      <div class=" eptext">
       <div class="container">
       <div class="row align-items-center justify-content-center">
         <h2 style="font-style: italic; color: #3B5732; text-align: center; margin-bottom: 30px;"data-aos="zoom-in" data-aos-delay="200"> Plants you grow can become part of your daily meals!</h2>
-        <p style="font-size: 20px; color: #3b5732;"data-aos="fade-left" data-aos-delay="300">From crisp lettuce and juicy tomatoes to fragrant herbs like basil and mint, growing your own produce means fresher, healthier ingredients right at your fingertips. It's rewarding, sustainable, and delicious.
+        <p  style="font-size: 20px; color: #3b5732;"data-aos="fade-left" data-aos-delay="300">From crisp lettuce and juicy tomatoes to fragrant herbs like basil and mint, growing your own produce means fresher, healthier ingredients right at your fingertips. It's rewarding, sustainable, and delicious.
 
         </p>
        
       </div>
       </div>
     </div>
-    <div class=" plant-grid">
+    <div class="plant-grid">
       <div class="plant-card" data-aos="flip-up" data-aos-delay="100">
         <div class="plant-image">
-          <img src="image/cp1.png" alt="Tomatoes">
+          <img src="image/cp1.png" alt="Tomatoes" />
         </div>
         <div class="plant-info">
           <h3>Tomatoes</h3>
           <p>Rich in vitamins A and C, tomatoes are easy to grow and perfect for salads and sauces.</p>
         </div>
       </div>
-    
+      
       <div class="plant-card" data-aos="flip-up" data-aos-delay="200">
         <div class="plant-image">
-          <img src="image/cp2.png" alt="Spinach">
+          <img src="image/cp2.png" alt="Spinach" />
         </div>
         <div class="plant-info">
           <h3>Spinach</h3>
           <p>Leafy green packed with iron and nutrients. Easy to grow in containers or garden beds.</p>
         </div>
       </div>
-    
+      
       <div class="plant-card" data-aos="flip-up" data-aos-delay="300">
         <div class="plant-image">
-          <img src="image/cp3.png" alt="Carrots">
+          <img src="image/cp3.png" alt="Carrots" />
         </div>
         <div class="plant-info">
           <h3>Carrots</h3>
           <p>Crunchy and sweet, carrots are a root vegetable that can be grown in deep, loose soil.</p>
         </div>
       </div>
-    
+      
       <div class="plant-card" data-aos="flip-up" data-aos-delay="400">
         <div class="plant-image">
-          <img src="image/cp4.png" alt="Lettuce">
+          <img src="image/cp4.png" alt="Lettuce" />
         </div>
         <div class="plant-info">
           <h3>Lettuce</h3>
@@ -468,18 +482,18 @@
       </div>
     </section>
     <!-- Footer section start -->
-    <footer class="footer py-4" style="box-shadow: 5px 5px 10px rgb(0, 0, 0);">
+    <footer class="footer py-4 mt-5" style="box-shadow: 5px 5px 10px rgb(0, 0, 0);">
       <div class="container">
         <div class="row">
  
           <!-- Contact Info -->
           <div class="col-md-3">
             <h3><img src="image/icon.png" alt="icon" width="90px" height="auto"></h3>
-            <p class="ms-2">
+            <p>
               Address: The Gardening Hub, 123 Green Street, Frankfurt am Main, Germany<br>
             </p>
-            <p class="ms-2">Phone number: 09780215339</p>
-            <p class="ms-2">Email:growingroots@gmail.com</p>
+            <p>Phone number: 09780215339</p>
+            <p>Email:growingroots@gmail.com</p>
           </div>
  
           <!-- Quick Links -->
@@ -511,8 +525,8 @@
           </div>
  
           <!-- Social Media -->
-          <div class="col-md-3 icons">
-            <h3 class="ms-2">Follow Us</h3>
+          <div class="col-md-3 text-center align-items-center justify-content-center">
+            <h3>Follow Us</h3>
             <ul class="list">
               <li>
                 <a href="https://www.facebook.com/profile.php?id=61569394432597&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>

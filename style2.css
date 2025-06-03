@@ -325,5 +325,14 @@ background-image: url('finalimg/secbgoftool.png');
     background-color:  #91b257;
     color: #ffffff;
   }
+  @media screen and (max-width: 400px) {
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+}
 
   

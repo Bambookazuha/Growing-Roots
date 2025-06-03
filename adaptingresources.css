@@ -49,62 +49,113 @@ a:hover {
 }
 .adaptation-section {
   background-color: #f5fffa;
-  padding: 60px 0;
+
+  padding: 40px 20px;
 }
 
 .section-title {
   font-size: 2.5rem;
+
   color: #355e3b;
+
   margin-bottom: 20px;
 }
 
 .section-description {
   font-size: 1.1rem;
+
   color: #63715d;
+
   margin-bottom: 50px;
 }
 
 .adaptation-box {
   background-color: #ffffff;
+
   border: 1px solid #d9e6cc;
+
   border-radius: 10px;
-  padding: 30px;
+
+  padding: 20px;
+
   text-align: center;
+
   transition: transform 0.3s, box-shadow 0.3s;
+
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .adaptation-box {
+    max-width: 300px;
+
+    padding: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .adaptation-box {
+    max-width: 350px;
+  }
 }
 
 .adaptation-box:hover {
   transform: translateY(-5px);
+
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .adaptation-box h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+
   color: #355e3b;
+
   margin-bottom: 15px;
 }
 
 .adaptation-box p {
   font-size: 1rem;
+
   color: #63715d;
+
   margin-bottom: 20px;
+
+  flex-grow: 1;
 }
 
 .adaptation-box .btn {
   background-color: #f5fffa;
+
   color: #2e3c21;
+
   border: 3px solid #2e3c21;
+
   padding: 8px 8px;
+
   font-size: 1.1rem;
+
   font-weight: bold;
+
   border-radius: 15px;
+
   cursor: pointer;
+
   transition: transform 0.2s ease;
+
+  display: inline-block;
 }
 
 .adaptation-box .btn:hover {
   color: white;
+
   background-color: #91b257;
+
   transform: scale(1.05);
 }
 
@@ -203,57 +254,29 @@ a:hover {
   margin-bottom: 15px;
 }
 
-.pbd {
-  background-color: #f5fffa;
-}
-
-.venn-diagram {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  max-width: 100%;
-}
-
-.venn-diagram .circle {
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  color: white;
-  text-align: center;
-  font-size: 1rem;
-  padding: 1.5rem 1rem;
-  font-weight: 600;
-  line-height: 1.3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s;
-}
-
-.venn-diagram .circle:hover {
-  transform: scale(1.05);
-}
-
-/* Overlapping Positions */
-.circle.red {
-  background-color: #d96241;
-  top: 0;
-  left: 90px;
-}
-
-.circle.blue {
-  background-color: #3c7595;
-  bottom: 0;
-  left: 0;
-}
-
-.circle.yellow {
-  background-color: #daa520;
-  color: black;
-  bottom: 0;
-  right: 0;
+@media (max-width: 767px) {
+  .plant-grid {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .plant-card {
+    flex-direction: column;
+  }
+  .plant-image {
+    flex: none;
+    width: 100%;
+    height: 180px;
+  }
+  .plant-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .plant-info {
+    flex: none;
+    width: 100%;
+    padding: 15px;
+  }
 }
 
 .plant-dyes {
@@ -296,6 +319,60 @@ a:hover {
   color: #555;
   padding: 0 10px 10px;
 }
+.pbd {
+  background-color: #f5fffa;
+}
+
+.venn-diagram {
+  position: relative;
+  width: min(80vw, 400px);
+  height: min(80vw, 400px);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.venn-diagram .circle {
+  position: absolute;
+  width: 55%;
+  height: 55%;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  padding: clamp(0.8rem, 3vw, 1.5rem) clamp(0.6rem, 2vw, 1rem);
+  font-weight: 600;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.venn-diagram .circle:hover {
+  transform: scale(1.05);
+}
+
+/* Overlapping Positions */
+.circle.red {
+  background-color: #d96241;
+  top: 0;
+  left: 22.5%;
+}
+
+.circle.blue {
+  background-color: #3c7595;
+  bottom: 0;
+  left: 0;
+}
+
+.circle.yellow {
+  background-color: #daa520;
+  color: black;
+  bottom: 0;
+  right: 0;
+}
+
 /* Large Screens */
 @media (min-width: 992px) {
   .cptext {
@@ -320,19 +397,17 @@ a:hover {
     color: black;
   }
   .venn-diagram {
-    width: 320px;
-    height: 320px;
+    width: min(90vw, 320px);
+    height: min(90vw, 320px);
   }
 
   .venn-diagram .circle {
-    width: 180px;
-    height: 180px;
-    font-size: 0.9rem;
-    padding: 1rem;
+    font-size: clamp(0.7rem, 2.2vw, 0.9rem);
+    padding: clamp(0.6rem, 2vw, 1rem);
   }
 
   .circle.red {
-    left: 70px;
+    left: 21.875%;
   }
   .plant-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -340,7 +415,6 @@ a:hover {
   .cpsection {
     margin: 0;
     background-color: #f5fffa;
-
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -357,19 +431,17 @@ a:hover {
     color: black;
   }
   .venn-diagram {
-    width: 280px;
-    height: 280px;
+    width: min(95vw, 280px);
+    height: min(95vw, 280px);
   }
 
   .venn-diagram .circle {
-    width: 150px;
-    height: 150px;
-    font-size: 0.8rem;
-    padding: 0.8rem;
+    font-size: clamp(0.65rem, 2vw, 0.8rem);
+    padding: clamp(0.5rem, 1.8vw, 0.8rem);
   }
 
   .circle.red {
-    left: 60px;
+    left: 21.428%;
   }
 }
 @media (max-width: 767px) {
@@ -383,18 +455,16 @@ a:hover {
 /* Extra Small Screens */
 @media (max-width: 576px) {
   .venn-diagram {
-    width: 240px;
-    height: 240px;
+    width: min(95vw, 240px);
+    height: min(95vw, 240px);
   }
 
   .venn-diagram .circle {
-    width: 130px;
-    height: 130px;
-    font-size: 0.75rem;
-    padding: 0.6rem;
+    font-size: clamp(0.6rem, 1.8vw, 0.75rem);
+    padding: clamp(0.4rem, 1.5vw, 0.6rem);
   }
 
   .circle.red {
-    left: 50px;
+    left: 20.833%;
   }
 }
