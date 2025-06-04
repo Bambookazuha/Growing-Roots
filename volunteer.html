@@ -19,6 +19,23 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+ <style>
+      .btn.submit-button {
+        width: 100%;
+        margin-top: 1.5rem;
+        background-color: #f5fffa;
+        color:#2e3c21;
+        border: 3px solid #2e3c21;
+        padding: 8px 8px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-radius: 15px;
+      }
+      .btn.submit-button:hover {
+        color: white;
+        background-color:  #91b257;
+      }
+ </style>
 </head>
 <body class="volunteer-page">
   <a href="#top" class="btn scroll-up">
@@ -270,7 +287,7 @@
       <textarea id="experience" name="experience" placeholder="Let us know your skills or past volunteer work..."></textarea>
       <label for="motivation">Why do you want to volunteer with us?</label>
       <textarea id="motivation" name="motivation" placeholder="Tell us why you're interested..."></textarea>
-      <button type="submit">Submit Application</button>
+      <button type="submit" class="btn submit-button">Submit Application</button>
     </div>
   
     <div class="side-animation right">
